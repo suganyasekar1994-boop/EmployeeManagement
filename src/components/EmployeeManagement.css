@@ -1,0 +1,201 @@
+
+.employee-container {
+  min-height: 100vh;
+  padding: 30px 40px;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header */
+.employee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.employee-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.employee-header p {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Add Employee button */
+.add-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* Search section */
+.search-box {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 400px;
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Table container */
+.table-box {
+  background: white;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+/* Table */
+.table-box table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+/* Table heading */
+.table-box th {
+  background: #f8fafc;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+  text-transform: uppercase;
+}
+
+/* Table data */
+.table-box td {
+  padding: 15px;
+  font-size: 14px;
+  color: #4b5563;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Row hover */
+.table-box tbody tr:hover {
+  background: #f8fbff;
+}
+
+/* ID */
+.table-box td:first-child {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Salary */
+.table-box td:nth-child(7) {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Edit button */
+.edit-btn {
+  border: none;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 7px 13px;
+  border-radius: 6px;
+  margin-right: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #dbeafe;
+}
+
+/* Delete button */
+.delete-btn {
+  border: none;
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 7px 13px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+/* Loading */
+.loading {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  color: #6b7280;
+  font-size: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* No data */
+.no-data {
+  text-align: center;
+  padding: 40px !important;
+  color: #9ca3af !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .employee-container {
+    padding: 20px;
+  }
+
+  .employee-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .employee-header h1 {
+    font-size: 23px;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+
+  .search-box input {
+    max-width: 100%;
+  }
+}
